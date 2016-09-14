@@ -1,3 +1,4 @@
+'use strict';
 const ex2 = require('../ex_2');
 const assert = require('assert').equal;
 const addNumbers = ex2.addNumbers;
@@ -21,4 +22,5 @@ describe('Exercise 2: Arrays', () => {
   it('pluralize: should add an s to the end of each word', () => {
     assert(pluralize(['thing', 'other'])[0], 'things');
   });
-})
+
+});
