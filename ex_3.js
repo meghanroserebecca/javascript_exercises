@@ -85,8 +85,6 @@ SlothRanch.prototype.feedSloths = function() {
 
 SlothRanch.prototype.findSloths = function(tree) {
   //your code here!
-  return this.grove.filter(s => s.favoriteTree === tree).map(s => s.name);
-
 };
 
 //finally we want to get the total fed per day for all of our sloths. For our purposes a day is one index in the feedings array. So we want the total of each index across all feedings arrays for all of our sloths as an array.
