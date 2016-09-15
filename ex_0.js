@@ -5,7 +5,6 @@
 
 function firstFunction(string) {
   //your code here
-  return string + 's';
 }
 
 
