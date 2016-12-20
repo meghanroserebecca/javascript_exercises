@@ -85,7 +85,6 @@ SlothRanch.prototype.feedSloths = function() {
 
 SlothRanch.prototype.findSloths = function(tree) {
   //your code here!
-  return this.grove.filter(s => s.favoriteTree === tree).map(s => s.name);
 
 };
 
