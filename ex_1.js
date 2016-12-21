@@ -17,7 +17,7 @@ function mainInitial(name) {
   //your code here!
 }
 
-//write a function that reverses a string
+//Write a function that reverses a string
 //eg: 'sloth' -> 'htols'
 //eg: 'bat' -> 'tab'
 
@@ -25,7 +25,7 @@ function reverseString(string) {
   //your code here!
 }
 
-//write a function that capitalizes the first letter of every word
+//Write a function that capitalizes the first letter of every word
 //eg: 'no way that rules' -> 'No Way That Rules'
 //eg: 'whatever sloths are the best' ->  'Whatever Sloths Are The Best'
 

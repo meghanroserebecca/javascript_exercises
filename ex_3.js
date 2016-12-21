@@ -4,7 +4,7 @@
 //Sloth Ranch!
 //This one's a little different. We're going to use objects, constructors and the prototype to model a sloth ranch
 
-//write a constructor that makes a new instance of Sloth when you call it. It will get passed a name as a string and a favorite tree as a string. It will also have two additional properties: feedings, which is an array of numbers that you'll initialize here as an empty array; and totalFed, which will be the running total of everything in the feedings array and start at 0.
+//Write a constructor that makes a new instance of Sloth when you call it. It will get passed a name as a string and a favorite tree as a string. It will also have two additional properties: feedings, which is an array of numbers that you'll initialize here as an empty array; and totalFed, which will be the running total of everything in the feedings array and start at 0.
 
 /*eg: var violet = new Sloth('Violet', 'mangrove') -> {
   name: 'Violet',
@@ -17,20 +17,28 @@ function Sloth(name, favoriteTree) {
   //your code here!
 };
 
-//our sloth needs a function to feed it. We want to track the size of the feedings throughout the week so we're going to keep them in an array. We'll simulate the amount fed with a random number from 0-5;
+//Our sloth needs a function to feed it. We want to track the size of the feedings throughout the week so we're going to keep them in an array. We'll simulate the amount fed with a random number from 0-5. Write a function 'feed' that adds a feeding to the feedings array.
 
 /*eg: violet.feed() -> {
   name: 'Violet',
   favoriteTree: 'mangrove',
   feedings: [4],
-  totalFed
-}*/
+  totalFed: 0
+}
+
+violet.feed() -> {
+  name: 'Violet',
+  favoriteTree: 'mangrove',
+  feedings: [4, 2],
+  totalFed: 0
+}
+*/
 
 Sloth.prototype.feed = function() {
   //your code here!
 };
 
-//it also needs a function to calculate how much it's been fed. Add up all of the numbers in the feedings array and set it as the totalFed
+//It also needs a function to calculate how much it's been fed. Write a function 'calculateTotalFed'that adds up all of the numbers in the feedings array and sets the result to the property 'totalFed'.
 
 /*eg: violet.calculateTotalFed() -> {
   name: 'Violet',
@@ -43,7 +51,7 @@ Sloth.prototype.calculateTotalFed = function() {
   //your code here!
 };
 
-//Now write a constructor for the ranch. It needs a property grove which is an array where we keep all of our sloth instances.
+//Now write a constructor for the ranch. It needs a property 'grove' which is an array where we keep all of our sloth instances.
 
 /*eg: var ranchoSlotho = new SlothRanch() -> {
 grove: []
@@ -88,7 +96,7 @@ SlothRanch.prototype.findSloths = function(tree) {
 
 };
 
-//finally we want to get the total fed per day for all of our sloths. For our purposes a day is one index in the feedings array. So we want the total of each index across all feedings arrays for all of our sloths as an array.
+//Finally we want to get the total fed per day for all of our sloths. For our purposes a day is one index in the feedings array. So we want the total of each index across all feedings arrays for all of our sloths as an array.
 
 /* eg: if we started with: {
   grove: [

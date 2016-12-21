@@ -1,5 +1,5 @@
 'use strict';
-//write a function that returns the passed in string with an s added
+//Write a function that returns the passed in string with an s added
 //eg 'bat' -> 'bats'
 //eg 'bats' ->  'batss'
 
