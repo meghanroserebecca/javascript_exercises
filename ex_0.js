@@ -4,7 +4,7 @@
 //eg 'bats' ->  'batss'
 
 function firstFunction(string) {
-  //your code here
+  return string + 's';
 }
 
 
