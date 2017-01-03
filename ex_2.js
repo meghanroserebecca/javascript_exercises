@@ -20,10 +20,11 @@ function addNumbers(array) {
 
 function hasItem(array, match) {
   for (var i = 0; i < array.length; i++) {
-    if (match !== array[i]) {
+    if (match === array[i]) {
       return true;
-    } else {return false;};
+    }
   }
+  return false;
 };
 
 //Write a function that tells you the highest value in a given array
@@ -34,7 +35,7 @@ function highestNumber(array) {
     return b - a;
   });
   return arrayHighToLow[0];
-};
+}; //Fun one: return Math.max.apply(null, array)
 
 //Write a function that adds an s to the end of each string in an array
 
